@@ -326,6 +326,7 @@ weblist/media/
 .pytest_cache/
 
 
-.env
+# .env removed since this is used for config
+.007  # my local file
 .envs/*
 !.envs/.local/
