@@ -1,0 +1,22 @@
+After installing and running pydanny cookie cutter
+create venv
+comment psycopg2-binary out from the requirements/local.txt - i'm doing this to have both prod and local packages in one env
+install the local requirements
+in terminal: export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+install production requirements
+
+create .env file in settings folder
+add to base.py in settings: environ.Env.read_env() #new addition 15 Mar 21 to read from the .env file
+
+add to the setting.base.py
+default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'template.sqlite',
+    }
+
+edit the requirements if needed add psycopg2==2.8.6 to the local.txt
+
+Change the email backend to console
+
+Create CELERY_BROKER_URL in .env file
+
