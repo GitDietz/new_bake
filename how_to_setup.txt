@@ -16,7 +16,14 @@ default': {
 
 edit the requirements if needed add psycopg2==2.8.6 to the local.txt
 
-Change the email backend to console
+Change the email backend to console:DJANGO_EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
 
 Create CELERY_BROKER_URL in .env file
+
+Creating superuser is harder since everything is done on the user forms
+=======================================================================
+Can do createsuperuser on console
+Or, with the email set to console , runserver, use the sign up form and the confirmation form link that comes up on the console
+After this is successful, open the DB and set the user data  - users_user, set the value is_superuser=1
+
 
