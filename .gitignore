@@ -331,3 +331,4 @@ weblist/media/
 .envs/*
 !.envs/.local/
 .idea/runConfigurations/runserver.xml
+.idea/*
