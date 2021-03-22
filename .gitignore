@@ -330,3 +330,4 @@ weblist/media/
 .007  # my local file
 .envs/*
 !.envs/.local/
+.idea/runConfigurations/runserver.xml
